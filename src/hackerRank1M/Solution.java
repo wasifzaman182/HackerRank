@@ -36,7 +36,7 @@ class Result {
                 pcount+=1;
                
             }
-            if(arr.get(i)<0){
+            if (arr.get(i)<0){
                 ncount+=1;
    
             }
@@ -47,27 +47,27 @@ class Result {
             
         }
        
-         System.out.println("count is positive  " + pcount);
-         System.out.println("count is Negative   " + ncount);
-         System.out.println("count is zero  " + zcount);
-       
+//         System.out.println("count is positive  " + pcount);
+//         System.out.println("count is Negative   " + ncount);
+//         System.out.println("count is zero  " + zcount);
+//       
        
          DecimalFormat df = new DecimalFormat("#.######");
          DecimalFormat df1 = new DecimalFormat("0.000000");
        
        
-         presult=(double)pcount/size;                //cast the int value into double  from net
-         String value1  = df1.format(presult);       //net 
+         presult=(double)pcount/size;                
+         String value1  = df1.format(presult);        
          System.out.println( value1);
         
         
         
-         nresult=(double)ncount/size;                   //cast the int value into double
+         nresult=(double)ncount/size;                   
          String value2 = df1.format(nresult);
          System.out.println(value2);
        
         
-         zresult=(double)zcount/size;                 //cast the int value into double
+         zresult=(double)zcount/size;                 
          String value3 = df1.format(zresult);
          System.out.println(value3);
  
