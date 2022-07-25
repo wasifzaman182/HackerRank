@@ -47,7 +47,7 @@ class Result2 {
     for(Integer integer :arr){
       
     	sum +=integer ; 
-    	
+    	 
     	max=Math.max(max, integer);
     	min=Math.min(min, integer);
     			
@@ -55,7 +55,6 @@ class Result2 {
     
     System.out.print((sum-max) + " " +( sum-min));
     
- 
     }
 
     
