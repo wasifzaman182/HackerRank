@@ -21,6 +21,7 @@ class Result6 {
      */
 
     public static long flippingBits(long n) {
+    	System.out.println("value of n " + n);
     long y=  Long.parseLong(Integer.toBinaryString(~(int)n),2);
      System.out.println(y);
     return y;
@@ -31,25 +32,26 @@ class Result6 {
 
 public class Solution6 {
 	  public static void main(String[] args) throws IOException {
-	        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-	        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
-	        int q = Integer.parseInt(bufferedReader.readLine().trim());
-
-	        IntStream.range(0, q).forEach(qItr -> {
-	            try {
-	                long n = Long.parseLong(bufferedReader.readLine().trim());
-
-	                long result = Result6.flippingBits(n);
-
-	                bufferedWriter.write(String.valueOf(result));
-	                bufferedWriter.newLine();
-	            } catch (IOException ex) {
-	                throw new RuntimeException(ex);
-	            }
-	        });
-
-	        bufferedReader.close();
-	        bufferedWriter.close();
+//	        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//	        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+//
+//	        int q = Integer.parseInt(bufferedReader.readLine().trim());
+//
+//	        IntStream.range(0, q).forEach(qItr -> {
+//	            try {
+//	                long n = Long.parseLong(bufferedReader.readLine().trim());
+//
+//	                long result = Result6.flippingBits(n);
+//
+//	                bufferedWriter.write(String.valueOf(result));
+//	                bufferedWriter.newLine();
+//	            } catch (IOException ex) {
+//	                throw new RuntimeException(ex);
+//	            }
+//	        });
+//
+//	        bufferedReader.close();
+//	        bufferedWriter.close();
+		  Result6.flippingBits(3);
 	    }
 }
