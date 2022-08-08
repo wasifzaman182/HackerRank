@@ -28,14 +28,12 @@ class Result7 {
     int sumRTL=0;
     
     for(int i=0; i<arr.size(); i++){
-      
        sumLTR += arr.get(i).get(countRowWise);    
         countRowWise++;
     }
     
     countRowWise=0;
-    for(int i=arr.size()-1; i>=0; i--){
-             
+    for(int i=arr.size()- 1; i>=0; i--){       
         sumRTL +=arr.get(i).get(countRowWise);
         countRowWise++;
     }
